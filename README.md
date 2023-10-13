@@ -12,10 +12,6 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://www.figma.com/file/eduZEcJYlGBhpzSg9zGDIe/Rachi?type=design&node-id=0-21&mode=design&t=5Q0a5MhGeXAElRDB-4">
-</p>
-
 <br>
 
 <p align="center">
