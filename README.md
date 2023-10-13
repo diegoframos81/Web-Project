@@ -12,15 +12,10 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://www.figma.com/file/eduZEcJYlGBhpzSg9zGDIe/Rachi?type=design&node-id=0-21&mode=design&t=5Q0a5MhGeXAElRDB-4">
-</p>
-
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="![image](https://github.com/diegoframos81/Web-Project/assets/89109205/8719bafd-8762-4a52-8a84-81c682727909)
-" width="100%">
+  <img alt="projeto DevLinks" src="https://github.com/diegoframos81/Web-Project/blob/main/assets/Login.png?raw=true" width="100%">
 </p>
 
 ## 🚀 Tecnologias
