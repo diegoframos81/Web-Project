@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@400;700&display=swap');
+
+:root{
+    --azul-claro:#eff8ff;
+    --azul: #0f9afe;
+    --azul-escuro: #293145;
+    --cinza: #889199;
+}
+
+/* reset */
+
+html{font-size: 62.5%}
+
+*{
+    color: var(--azul-escuro);
+    font-family: 'Sora';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+img{
+    display: block;
+}
+
+/* header */
+
+header, main, section, footer{
+    padding: 2rem 7vw;
+}
+
+header, ul{
+    justify-content: space-between;
+    display: flex;
+}
+
+header{
+    font-size: 2rem;
+}
+
+header ul{
+    width: 50rem;
+}
+
+header button{
+    display: none;
+}
+
+/* main */
+
+main, section{
+    padding-top: 5rem;
+}
+
+main, #desfrute{
+    background-color: var(--azul-claro);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+main a, #nossos-planos a, #submit, #prata span{
+    background-color: var(--azul);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: 'inter';
+    border-radius: 10rem;
+    box-shadow: 2px 2px 2px #b8cbda;
+}
+
+main div, #desfrute > div{
+    height: 30rem;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+/* Como funciona */
+
+#como-funciona, #planos-grid, #contato{
+    padding-bottom: 10rem;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#como-funciona-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--cinza);
+}
+
+.funciona-card{
+    text-align: center;
+    max-width: 20rem;
+}
+
+.funciona-card img{
+    margin: 5rem auto 2rem;
+}
+
+.funciona-card h5{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+/* desfrute */
+
+#desfrute div{
+    display: grid;
+    grid-template-rows: min-content 10rem 6rem;
+    align-items: center;
+}
+
+#desfrute div div{
+    display: flex;
+}
+
+#desfrute h2{
+    text-align: start;
+    font-size: 2.5rem;
+}
+
+#desfrute p{
+    line-height: 2.2rem;
+    width: 40rem;
+}
+
+/* nossos planos */
+
+#planos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#nossos-planos > p{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.planos-card{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 4rem;
+    background-color: var(--azul-claro);
+    border-radius: 1rem;
+}
+
+h4{
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+
+.preco{
+    font: 600 5rem 'inter' !important;
+    color: var(--azul-escuro);
+}
+
+.planos-card a{
+    margin: 0 auto;
+    height: min-content;
+    width: 70%;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.planos-card p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-family: 'inter';
+}
+
+#prata span{
+    padding: 0.5rem 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: none;
+}
+
+#prata{
+    background-color: var(--azul-escuro);
+    color:#fff
+}
+
+#prata h4{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: -2rem;
+}
+
+#prata .preco, #prata p{
+    color: #fff;
+}
+
+#prata a{
+    box-shadow: none;
+}
+
+.preco::after, .preco::before{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.preco::after{
+    content:'/mês';
+}
+
+.preco::before{
+    font-family: 'sora';
+    content: 'R$';
+    transform: translateY(-1.8rem);
+}
+
+/* contato */
+
+#contato h2{
+    padding-top: 5rem;
+}
+
+#contato{
+    padding: 0 30vw;
+    text-align: center;
+    background: url('../assets//imagesMain/Group\ 33554.png');
+}
+
+#contato h2, #contato input[type^=email]::placeholder{
+    color: #fff;
+}
+
+#contato input[type^=email]{
+    font-family: 'inter';
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 30rem;
+    font-size: 1.5rem;
+    padding: 0 2rem 1rem;
+    margin: 10rem 0 0;
+    color: #fff;
+}
+
+input[type^=submit]{
+    border: none;
+    box-shadow: none !important;
+    padding: .5rem 3rem !important;
+    margin: 1rem auto 8rem;
+}
+
+/* footer */
+
+footer p{
+    color: var(--azul-escuro);
+    text-align: center;
+}
+
+/* responsivo */
+
+@media(max-width:1010px){
+    main{
+        flex-direction: column;
+    }
+
+    main img{
+        transform: translateY(10rem);
+    }
+
+    #desfrute > img{
+        display: none !important;
+    }
+
+    #desfrute{
+        flex-direction: column;
+    }
+
+    #desfrute > div{
+        display: contents;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #desfrute p{
+        margin: 2rem 0;
+    }
+
+    #desfrute div{
+        justify-content: space-between;
+    }
+
+    #planos-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .planos-card:last-child{
+        grid-column: 1/3;
+    }
+
+    form{
+        min-width: 30rem;
+    }
+}
+
+@media(max-width:696px){
+    .funciona-card:last-of-type{
+        grid-column: 1/3;
+        margin: 0 auto;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    
+    #planos-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .planos-card:last-child{
+        grid-column: 1/2;
+    }
+
+    header button{
+        display: block;
+        height: 2px;
+        width: 40px;
+        border: none;
+        background-color: #000;
+        transition: .5s;
+    }
+
+    header button::after, header button::before{
+        content: '';
+        height: 2px;
+        display: block;
+        background-color: #000;
+        border: none;
+        transition: .5s;
+    }
+
+    header button::after{
+        width: 20px;
+        margin: 10px 0 0 20px;
+    }
+
+    header button::before{
+        width: 40px;
+        margin-top: 11px;
+    }
+
+    .btn-on{
+        margin-top: 1.2rem;
+        transform: rotate(45deg);
+    }
+
+    .btn-on::before{
+        height: 0;
+        margin: 0;
+        opacity: 0;
+    }
+
+    .btn-on::after{
+        width: 40px;
+        margin: 0;
+        transform: rotate(90deg);
+    }
+
+    .lista-on{
+        background-color: #fff;
+        position: absolute;
+        display: inline;
+        top: 6.9rem;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        z-index: 1;
+        animation: da-direita .5s;
+    }
+
+    .lista-on li{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    .lista-on a{
+        margin: 0 auto;
+        border-bottom: 2px solid var(--azul);
+        display: block;
+        width: max-content;
+    }
+
+    @keyframes da-direita {
+        0%{width: 0;}
+        100%{width: 40%;}
+    }
+
+    main img{
+        width: 30rem;
+        transform: translateY(5rem);
+    }
+
+    #como-funciona-grid{
+        justify-content: center;
+    }
+
+    #desfrute p, #desfrute h2{
+        text-align: center;
+        width: auto;
+    }
+
+    #contato{
+        padding: 0 7vw;
+    }
+}
+
+@media (max-width:400px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    main img{
+        transform: translateY(0);
+    }
+
+    #desfrute img{
+        width: 15rem;
+    }
+
+    #contato input[type=email]{
+        width: auto;
+        padding-left: 0;
+    }
+
+    form{
+        min-width: auto;
+    }
+}
